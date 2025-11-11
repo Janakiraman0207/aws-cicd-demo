@@ -1,10 +1,15 @@
 version: 0.2
+
 phases:
+  install:
+    commands:
+      - echo "Installing dependencies..."
   build:
     commands:
-      - echo "Building..."
+      - echo "Building application..."
       - mkdir -p output
       - cp index.html output/
 artifacts:
   files:
     - output/**/*
+
