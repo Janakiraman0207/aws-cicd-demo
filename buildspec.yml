@@ -1,15 +1,12 @@
 version: 0.2
 
 phases:
-  install:
-    commands:
-      - echo "Installing dependencies..."
-      - npm install
   build:
     commands:
-      - echo "Building React app..."
-      - npm run build
+      - echo "Building static website..."
+      - mkdir -p output
+      - cp index.html output/
 artifacts:
   files:
     - '**/*'
-  base-directory: build
+  base-directory: output
