@@ -4,12 +4,12 @@ phases:
   install:
     commands:
       - echo "Installing dependencies..."
+      - npm install
   build:
     commands:
-      - echo "Building application..."
-      - ls
-      - mkdir -p output
-      - cp index.html output/
+      - echo "Building React app..."
+      - npm run build
 artifacts:
   files:
-    - output/**/*
+    - '**/*'
+  base-directory: build
