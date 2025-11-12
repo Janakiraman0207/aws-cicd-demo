@@ -1,3 +1,1 @@
-#!/bin/bash
-sudo systemctl restart httpd
-
+Delete scriptstart_server.sh
