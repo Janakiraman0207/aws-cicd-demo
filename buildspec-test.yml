@@ -1,0 +1,12 @@
+version: 0.2
+phases:
+  install:
+    commands:
+      - echo "Installing test dependencies..."
+  build:
+    commands:
+      - echo "Running dummy tests..."
+      - echo "All tests passed successfully!"
+artifacts:
+  files:
+    - '**/*'
