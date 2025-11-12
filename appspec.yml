@@ -3,9 +3,7 @@ os: linux
 files:
   - source: /
     destination: /var/www/html
-
 hooks:
   AfterInstall:
-    - location: scriptsstart_server.sh
-      timeout: 300
-      runas: root
+    - location: scripts/start_server.sh
+      runas: ec2-user
